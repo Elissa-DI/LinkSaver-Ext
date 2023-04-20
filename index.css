@@ -2,49 +2,44 @@ body{
     margin: 0;
     padding: 10px;
     min-width: 400px;
-    font-family: Arial, Helvetica, sans-serif ;
+    background: url(./44.png) no-repeat;
+    background-size: cover;
+    background-repeat: none;
+    /* background-color: rgb(36, 40, 41); */
 }
 h2 {
     font-size: 25px;
+    font-family: cursive;
+    /* color: white; */
     animation: color-change-h1 3s infinite;
 }
-@keyframes color-change-h1 {
-    0% {
-        color: #e6009d;
-    }
-    50% {
-        color: blue;
-    }
-    100% {
-        color: rgb(23, 55, 23);
-    }
-}
-
 #input-el {
-    background-color:  #baceca;
-    width: 300px;
+    background-color:  #fff;
+    width: 420px;
     height: 35px;
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box;
     border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px black;
-}
-#input-el:focus {
-    background-color: #fff;
-    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 0px 1px black;
 }
 #input-btn {
-    color: #fff;
-    background-color: rgb(28, 57, 28);
-    font-weight: bold;
+    width: 130px;
     height: 30px;
-    border-radius: 5px;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-bottom: 4px;
-
+    border: none;
+    font-weight: bold;
+    color: #eee;
+    background-color: aqua;
+    font-family: cursive;
+    cursor: pointer;
+}
+#input-btn:hover {
+    background-color: #fff;
+    color: aqua;
+    border: 1px solid aqua;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 ul {
     margin-top: 20px;
@@ -55,7 +50,6 @@ ul {
 ul li {
     margin-top: 5px;
     color: rgb(26, 49, 26);
-
 }
 li a { 
     color: rgb(30, 62, 30);

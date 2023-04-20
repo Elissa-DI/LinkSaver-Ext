@@ -10,18 +10,20 @@ inputBtn.addEventListener("click", function() {
 })
 
 function renderLeads () {
-    let listItems = " "
+    let listItems = " ";
 
 
 for (let i = 0; i < myLeads.length; i++) {
        //listItems += "<li><a target='_ blank' href='"+ myLeads + "'>" + myLeads[i] + "</a></li>"
        //Template strings
        listItems += `
-       <li>
-       <a target='_ blank' href='${myLeads[i]}'> 
+       <div style='width: 400px; border-radius: 5px;'>
+       <li style='width: 50% height: 30px; background-color: white;'>
+       <a target='_ blank' href='${myLeads[i]}' style='text-decoration: none;'> 
        ${myLeads[i]}
           </a>
        </li>
+       </div>
        `
     }       
 
